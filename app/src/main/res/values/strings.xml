@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Practica2</string>
+    <string name="NombreAutor">Daniel Abellán Zárate</string>
+    <string name="Agenda">Agenda</string>
+    <string name="AgendaConstraint">Agenda - Constraint</string>
+    <string name="Receta">Receta</string>
 </resources>
