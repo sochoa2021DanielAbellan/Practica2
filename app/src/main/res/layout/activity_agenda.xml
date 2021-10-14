@@ -9,10 +9,11 @@
     tools:context=".AgendaActivity">
 
   <TextView
+      android:id="@+id/tvContacto"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_gravity="center_horizontal"
-      android:text="Hello World!"
+      android:text="@string/tvNuevoContacto"
       android:textAppearance="@style/TextAppearance.AppCompat.Display1"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintLeft_toLeftOf="parent"
@@ -20,69 +21,116 @@
       app:layout_constraintTop_toTopOf="parent" />
 
   <LinearLayout
+      android:id="@+id/LLNombre"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_weight="1"
+        android:text="@string/tvNombre"
+        android:textAlignment="center" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/etNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="4"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
 
   </LinearLayout>
 
   <LinearLayout
+      android:id="@+id/LLApellidos"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvApellidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_weight="1"
+        android:text="@string/tvApellidos"
+        android:textAlignment="center" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/etApellidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="4"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
   </LinearLayout>
 
   <LinearLayout
+      android:id="@+id/LLEmail"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_weight="1"
+        android:text="@string/tvEmail"
+        android:textAlignment="center" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/etEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="4"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textEmailAddress" />
 
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/LLTelefono"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/tvTelefono"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:ems="10"
+        android:inputType="phone" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/LLNotas"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tvNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/tvNotas"
+        android:translationX="40px" />
   </LinearLayout>
 
   <EditText
-      android:id="@+id/editTextTextMultiLine"
+      android:id="@+id/etNotas"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_weight="1"
@@ -93,34 +141,35 @@
       android:inputType="textMultiLine" />
 
   <LinearLayout
+      android:id="@+id/LLBotones"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:layout_gravity="bottom"
       android:orientation="horizontal">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTint="#46A9FF"
-        android:text="Button" />
+        android:text="@string/btnAceptar" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnReiniciar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTint="#46A9FF"
-        android:text="Button" />
+        android:text="@string/btnReiniciar" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnSalir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:backgroundTint="#46A9FF"
-        android:text="Button" />
+        android:text="@string/btnSalir" />
   </LinearLayout>
 
 </LinearLayout>

@@ -4,4 +4,13 @@
     <string name="Agenda">Agenda</string>
     <string name="AgendaConstraint">Agenda - Constraint</string>
     <string name="Receta">Receta</string>
+    <string name="tvNuevoContacto">Nuevo Contacto</string>
+    <string name="tvNombre">Nombre</string>
+    <string name="tvApellidos">Apellidos</string>
+    <string name="tvEmail">E-Mail</string>
+    <string name="tvTelefono">Teléfono</string>
+    <string name="tvNotas">Notas:</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="btnReiniciar">Reiniciar</string>
+    <string name="btnSalir">Salir</string>
 </resources>
