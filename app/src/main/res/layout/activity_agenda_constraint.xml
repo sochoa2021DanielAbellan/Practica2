@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgendaConstraint">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/ivIconoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/etNombreAC"
+        app:layout_constraintStart_toStartOf="@+id/ivIconoTelefono"
+        app:layout_constraintTop_toTopOf="@+id/etNombreAC"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <EditText
+        android:id="@+id/etNombreAC"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/etNombreAC"
+        app:layout_constraintBottom_toTopOf="@+id/etTelefonoAC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAvatar" />
+
+    <ImageView
+        android:id="@+id/ivIconoTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/etTelefonoAC"
+        app:layout_constraintStart_toStartOf="@+id/ivIconoCorreo"
+        app:layout_constraintTop_toTopOf="@+id/etTelefonoAC"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <EditText
+        android:id="@+id/etTelefonoAC"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/etTelefonoAC"
+        app:layout_constraintBottom_toTopOf="@+id/etCorreoAC"
+        app:layout_constraintStart_toStartOf="@+id/etNombreAC"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreAC" />
+
+    <ImageView
+        android:id="@+id/ivIconoCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etCorreoAC"
+        app:layout_constraintEnd_toStartOf="@+id/etCorreoAC"
+        app:layout_constraintTop_toTopOf="@+id/etCorreoAC"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <EditText
+        android:id="@+id/etCorreoAC"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/etCorreoAC"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/etTelefonoAC"
+        app:layout_constraintTop_toBottomOf="@+id/etTelefonoAC" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:text="@string/btnOK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:text="@string/btnCancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnOK"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+</android.support.constraint.ConstraintLayout>
