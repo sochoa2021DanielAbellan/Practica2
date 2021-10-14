@@ -18,4 +18,12 @@
     <string name="etCorreoAC">ejemplo@dominio.es</string>
     <string name="btnOK">OK</string>
     <string name="btnCancelar">Cancelar</string>
+    <string name="tvTituloReceta">Lasaña a la Boloñesa</string>
+    <string name="tvAutorReceta">Daniel Abellán Zárate</string>
+    <string name="tvTituloDescripcionReceta">Descripción</string>
+    <string name="tvBodyDescripcionReceta">orem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt lectus massa, venenatis ornare nulla eleifend sit amet. Suspendisse quis dui nec justo dictum suscipit.</string>
+    <string name="tvTituloIngredientesReceta">Ingredientes</string>
+    <string name="tvBodyIngredientesReceta">Donec rhoncus semper nunc, vitae scelerisque quam auctor in. Integer consequat lorem a justo elementum, id fringilla eros posuere. Sed tincidunt nibh porta sem dignissim convallis.</string>
+    <string name="tvTituloElaboracionReceta">Elaboración</string>
+    <string name="tvBodyElaboracionReceta">Ut nec nulla nec sapien maximus accumsan. Aliquam quis lectus porta, volutpat odio in, scelerisque quam. Duis in enim sit amet arcu accumsan hendrerit. Ut et fermentum arcu. Ut tempor tortor augue, eu aliquam dolor consequat sed. Duis accumsan tortor et orci fringilla congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla dapibus ligula eu gravida. In sit amet sem massa. In luctus ipsum diam, vel condimentum ligula vestibulum non. Morbi et dolor bibendum, aliquam nulla eu, blandit tortor. Maecenas facilisis lorem a massa aliquet, eu ultrices justo rutrum. Sed et lacinia urna. In sodales ut risus sit amet bibendum. Aliquam lacinia augue enim, at finibus leo faucibus ut. Phasellus ultricies nisl sit amet dui mattis ornare. Curabitur at velit id elit vestibulum consectetur. Phasellus gravida, diam sit amet luctus eleifend, nulla lectus pellentesque velit, ac aliquam lacus neque quis tellus.</string>
 </resources>

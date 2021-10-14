@@ -25,7 +25,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/lasana"
+        tools:srcCompat="@drawable/lasana" />
 
     <TextView
         android:id="@+id/tvTituloReceta"
@@ -33,8 +34,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:backgroundTintMode="add"
+        android:fontFamily="sans-serif-condensed-medium"
         android:text="@string/tvTituloReceta"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
+        android:textColorLink="#3F51B5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,8 +52,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"
         android:text="@string/tvAutorReceta"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="@+id/tvTituloReceta"
         app:layout_constraintTop_toBottomOf="@+id/tvTituloReceta" />
 
@@ -82,6 +96,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/tvTituloDescripcionReceta"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -105,6 +120,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/tvTituloIngredientesReceta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -113,7 +130,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/tvBodyIngredientesReceta"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -123,10 +140,12 @@
 
     <TextView
         android:id="@+id/tvTituloElaboracionReceta"
-        android:layout_width="58dp"
+        android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/tvTituloElaboracionReceta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/tvBodyDescripcionReceta"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -135,7 +154,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/tvBodyElaboracionReceta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tvTituloElaboracionReceta"
