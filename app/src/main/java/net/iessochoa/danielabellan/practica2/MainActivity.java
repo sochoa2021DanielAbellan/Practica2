@@ -22,7 +22,17 @@ public class MainActivity extends AppCompatActivity {
         btnReceta = findViewById(R.id.btnReceta);
 
         btnAgenda.setOnClickListener(view ->{
-            Intent intent = new Intent(MainActivity.this, AgendaActivity.class);
+            Intent intent = new Intent(this, AgendaActivity.class);
+            startActivity(intent);
+        });
+
+        btnAgendaConstraint.setOnClickListener(view -> {
+            Intent intent = new Intent(this, AgendaConstraintActivity.class);
+            startActivity(intent);
+        });
+
+        btnReceta.setOnClickListener(view -> {
+            Intent intent = new Intent(this, RecetaActivity.class);
             startActivity(intent);
         });
 

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AgendaConstraint">
+    android:background="#DA8DCBDF"
+    tools:context=".AgendaConstraintActivity">
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline4"
@@ -30,7 +31,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:srcCompat="@mipmap/ic_launcher" />
 
     <ImageView
         android:id="@+id/ivIconoNombre"
@@ -47,8 +49,8 @@
         android:layout_height="45dp"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/etNombreAC"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/etTelefonoAC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -69,8 +71,8 @@
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:ems="10"
-        android:inputType="phone"
         android:hint="@string/etTelefonoAC"
+        android:inputType="phone"
         app:layout_constraintBottom_toTopOf="@+id/etCorreoAC"
         app:layout_constraintStart_toStartOf="@+id/etNombreAC"
         app:layout_constraintTop_toBottomOf="@+id/etNombreAC" />
@@ -90,8 +92,8 @@
         android:layout_width="wrap_content"
         android:layout_height="45dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
         android:hint="@string/etCorreoAC"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/etTelefonoAC"
         app:layout_constraintTop_toBottomOf="@+id/etTelefonoAC" />
@@ -100,6 +102,7 @@
         android:id="@+id/btnOK"
         android:layout_width="135dp"
         android:layout_height="60dp"
+        android:backgroundTint="#46A9FF"
         android:text="@string/btnOK"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnCancelar"
@@ -111,6 +114,7 @@
         android:id="@+id/btnCancelar"
         android:layout_width="135dp"
         android:layout_height="60dp"
+        android:backgroundTint="#46A9FF"
         android:text="@string/btnCancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
